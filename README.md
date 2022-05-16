@@ -17,7 +17,8 @@ Data는 load시 (512,512)로 resize하여 (498,498)로 randomcrop할 때 성능�
 ## Data Augmentation
 
 기본적으로 Flip, Rotate, Randomcrop은 성능 향상에 도움이 되었습니다.
-추가로 약간의 Distortion, Cutout 그리고 6개의 model중 하나는 약간의 mixup을 추가하여 학습했을 때 가장 성능이 좋았습니다.
+
+추가로 약간의 Distortion, Cutout을 소극적으로 적용했고, 6개의 model중 하나는 약간의 mixup을 추가하여 학습했을 때 가장 성능이 좋았습니다.
 그 밖의 여러가지 방법으로 Augmentation을 시도했지만 Data특성상 Augmentation이 조금만 과해도 성능 저하가 나타났습니다.
 (예를 들면, Cutmix, puzzlemix, scale 등)
 
