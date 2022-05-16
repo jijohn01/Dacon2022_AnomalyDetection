@@ -1,6 +1,9 @@
 # Dacon2022_AnomalyDetection
 Dacon / Computer Vision 이상치 탐지 알고리즘 경진대회/Private 9위
 
+Public 점수 기준으로 가장 성능이 좋았던 모델은 model 폴더 안에 저장되어있습니다.
+04.Ensemble_predict.ipynb 전체 실행 시 동일한 결과를 생성할 수 있습니다.
+
 # Summary
 ## Baseline
 
