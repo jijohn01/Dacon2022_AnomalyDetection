@@ -2,6 +2,7 @@
 Dacon / Computer Vision 이상치 탐지 알고리즘 경진대회/Private 9위
 
 Public 점수 기준으로 가장 성능이 좋았던 모델은 model 폴더 안에 저장되어있습니다.
+
 04.Ensemble_predict.ipynb 전체 실행 시 동일한 결과를 생성할 수 있습니다.
 
 # Summary
@@ -38,6 +39,7 @@ Loss function에 가중치를 주어 Weighted Cross entropy로 학습시켜보�
 ## Model
 
 샘플이 5개 밖에 없는 class가 존재하였으므로 Stratified K-Fold를 사용하여 fold를 5개로 나눴습니다.
+
 MixUp이 없이 5개의 모델을 각각 학습시켜 앙상블 했을 때 성능이 좋았습니다. 여기에 추가로 MixUp을 약하게 적용하여 학습한 모델 1개를 앙상블에 추가했을 때
 Public 점수에서 눈에 띄는 이득이 있어 총 6개의 모델을 앙상블 하였습니다. 요약하면 아래와 같을 때 Public점수에서 가장 높았습니다.
 - No MixUp, Efficientnet b4 모델 5개
