@@ -25,6 +25,8 @@ Data는 load시 (512,512)로 resize하여 (498,498)로 randomcrop할 때 성능�
 
 ## Data Imbalance
 
+출처 : https://github.com/ufoym/imbalanced-dataset-sampler
+
 이상치 데이터의 갯수가 정상에 비해 매우 적으므로 Oversampling, Undersampling을 적절하게 배분하는 ImbalanceSampler를 사용하였습니다. 
 Loss function에 가중치를 주어 Weighted Cross entropy로 학습시켜보았으나 눈에 띄이는 성능향상은 얻지 못했습니다.
 
@@ -39,4 +41,5 @@ Public 점수에서 눈에 띄는 이득이 있어 총 6개의 모델을 앙상�
 ## TTA(Test Time Augmentation)
 
 출처: https://github.com/qubvel/ttach
+
 해당 패키지를 이용하여 Flip, Rotate(0,90,180), FiveCrop을 커스텀으로 생성하여 적용했습니다.
