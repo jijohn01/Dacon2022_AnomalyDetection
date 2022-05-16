@@ -7,11 +7,12 @@ Dacon / Computer Vision 이상치 탐지 알고리즘 경진대회/Private 9위
 제공된 baseline 코드를 기반으로 주로 Colab pro를 활용하였습니다.
 Supervised Anomaly Detection문제이므로 Classification 문제 해결 방식으로 접근하였습니다.
 
-## Data
+## Data Size
 
 Data는 load시 (512,512)로 resize하여 (498,498)로 randomcrop할 때 성능이 가장 좋았습니다.
+
 (700,700)으로 resize하여 학습해보았지만 결과적으로 public 점수에서 이득을 얻지 못했습니다.
-이미지 사이즈가 너무커서 Colab으로 돌리기 어려웠고 local에서 학습해봤지만 시간이 너무 오래걸려 여러번 실험해 보지 못했습니다.
+이미지 사이즈가 너무커서 Colab으로 돌리기 어려웠고 local에서 학습해봤지만 시간이 너무 오래 걸려 여러번 실험해 보지 못했습니다.
 
 ## Data Augmentation
 
