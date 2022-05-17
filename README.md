@@ -3,7 +3,7 @@ Dacon / Computer Vision 이상치 탐지 알고리즘 경진대회/Private 9위
 
 Public 점수 기준으로 가장 성능이 좋았던 모델은 model 폴더 안에 저장되어있습니다.
 
-01. EfficientNet_5fold.ipynb, 02. MixUp.ipynb 는 가장 성능이 좋았던 모델을 학습시키는 코드입니다.
+Public기준 가장 성능이 좋았던 모델은 01.EfficientNet_5fold.ipynb, 02.MixUp.ipynb로 학습시키면 됩니다.
 03.Ensemble_predict.ipynb 실행 시 학습한 모델을 사용하여 동일한 결과를 생성할 수 있습니다.
 
 다른 제출본은 이미지 사이즈를 (700,700)으로 키우면서 colab에서 메모리 초과 이슈가 발생해 local 환경에서 학습시켰으며 해당 코드는 "local" 폴더 안에 있습니다.
