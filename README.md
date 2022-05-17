@@ -3,9 +3,13 @@ Dacon / Computer Vision 이상치 탐지 알고리즘 경진대회/Private 9위
 
 Public 점수 기준으로 가장 성능이 좋았던 모델은 model 폴더 안에 저장되어있습니다.
 
-04.Ensemble_predict.ipynb 실행 시 학습한 모델을 사용하여 동일한 결과를 생성할 수 있습니다.
+01. EfficientNet_5fold.ipynb, 02. MixUp.ipynb 는 가장 성능이 좋았던 모델을 학습시키는 코드입니다.
+03.Ensemble_predict.ipynb 실행 시 학습한 모델을 사용하여 동일한 결과를 생성할 수 있습니다.
+
+다른 제출본은 이미지 사이즈를 (700,700)으로 키우면서 colab에서 메모리 초과 이슈가 발생해 local 환경에서 학습시켰으며 해당 코드는 "local" 폴더 안에 있습니다.
 
 # Summary
+
 ## Baseline
 
 제공된 baseline 코드를 기반으로 주로 Colab pro를 활용하였습니다.
@@ -26,8 +30,9 @@ Data는 load시 (512,512)로 resize하여 (498,498)로 randomcrop할 때 성능�
 그 밖의 여러가지 방법으로 Augmentation을 시도했지만 Data특성상 Augmentation이 조금만 과해도 성능 저하가 나타났습니다.
 (예를 들면, Cutmix, puzzlemix, scale 등)
 
-또한, 일부 class의 경우 Augmentation을 더욱 소극적으로 사용해야할 것으로 보여 Class별로 다르게 Augmentation하도록 했지만 눈에 띄는 성능향상은 얻지 못했습니다.
-실험 횟수가 부족한 탓이 있을 수 있을 것 같습니다.
+ 일부 class의 경우 Augmentation을 더욱 소극적으로 사용해야할 것으로 보였습니다.
+ 예를 들면, metal_nut의 경우 flip이 이상치 클래스 중에 있어 augmentation시 flip을 하면 학습에 방해가 될 것으로 보였습니다.
+ 두번째 제출본은 Class별로 다르게 Augmentation하도록 했지만 public에서 눈에 띄는 성능향상은 얻지 못했습니다. 실험 횟수가 부족한 탓이 있을 수 있을 것 같습니다.
 
 ## Data Imbalance
 
