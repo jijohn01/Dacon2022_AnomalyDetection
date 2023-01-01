@@ -55,3 +55,11 @@ Public 점수에서 눈에 띄는 이득이 있어 총 6개의 모델을 앙상�
 출처: https://github.com/qubvel/ttach
 
 해당 패키지를 이용하여 Flip, Rotate(0,90,180), FiveCrop을 커스텀으로 생성하여 적용했습니다.
+
+## Grad CAM
+모델이 제대로 예측하지 못하는 Case를 통해 모델 학습 방법을 조정하였습니다.
+  - Rotate 시 여백부분 오류
+  - Augmentation을 class에 따라 다르게 
+![grad_cam](https://user-images.githubusercontent.com/28197373/210173712-9ec808e1-0af8-43dc-b94a-7e01f9c072c3.jpg)
+
+
